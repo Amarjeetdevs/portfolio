@@ -3,7 +3,7 @@ import {
   cloudflareDevProxyVitePlugin as remixCloudflareDevProxy,
 } from '@remix-run/dev';
 import { defineConfig } from 'vite';
-import { vercelPreset } from '@vercel/remix/vite';
+// import { vercelPreset } from '@vercel/remix/vite';
 import jsconfigPaths from 'vite-jsconfig-paths';
 import mdx from '@mdx-js/rollup';
 import remarkFrontmatter from 'remark-frontmatter';
@@ -28,7 +28,7 @@ export default defineConfig({
     }),
     remixCloudflareDevProxy(),
     remix({
-       presets: [vercelPreset()],
+      //  presets: [vercelPreset()],
       routes(defineRoutes) {
         return defineRoutes(route => {
           route('/', 'routes/home/route.js', { index: true });
