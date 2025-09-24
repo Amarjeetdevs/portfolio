@@ -18,7 +18,7 @@ export default defineConfig({
     assetsInlineLimit: 1024,
   },
   server: {
-    port: 3000,
+    port: 7777,
   },
   plugins: [
     mdx({
