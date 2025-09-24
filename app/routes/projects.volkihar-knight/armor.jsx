@@ -1,9 +1,9 @@
-import vknx from '~/assets/volkihar-cube-nx.jpg';
-import vkny from '~/assets/volkihar-cube-ny.jpg';
-import vknz from '~/assets/volkihar-cube-nz.jpg';
-import vkpx from '~/assets/volkihar-cube-px.jpg';
-import vkpy from '~/assets/volkihar-cube-py.jpg';
-import vkpz from '~/assets/volkihar-cube-pz.jpg';
+// import vknx from '~/assets/volkihar-cube-nx.jpg';
+// import vkny from '~/assets/volkihar-cube-ny.jpg';
+// import vknz from '~/assets/volkihar-cube-nz.jpg';
+// import vkpx from '~/assets/volkihar-cube-px.jpg';
+// import vkpy from '~/assets/volkihar-cube-py.jpg';
+// import vkpz from '~/assets/volkihar-cube-pz.jpg';
 import armor from '~/assets/volkihar-knight.glb';
 import { Loader } from '~/components/loader';
 import { tokens } from '~/components/theme-provider/theme';
@@ -96,7 +96,7 @@ export const Armor = ({
 
     const load = async () => {
       const loadGltf = modelLoader.loadAsync(armor);
-      const loadEnv = cubeTextureLoader.loadAsync([vknx, vkny, vknz, vkpx, vkpy, vkpz]);
+      const loadEnv = cubeTextureLoader.loadAsync(['']);
 
       const [gltf, envTexture] = await Promise.all([loadGltf, loadEnv]);
 

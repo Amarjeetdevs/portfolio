@@ -1,7 +1,7 @@
-import notFoundPoster from '~/assets/notfound.jpg';
-import notFoundVideo from '~/assets/notfound.mp4';
-import flatlinePoster from '~/assets/flatline.png';
-import flatlineVideo from '~/assets/flatline.mp4';
+// import notFoundPoster from '~/assets/notfound.jpg';
+// import notFoundVideo from '~/assets/notfound.mp4';
+// import flatlinePoster from '~/assets/flatline.png';
+// import flatlineVideo from '~/assets/flatline.mp4';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Heading } from '~/components/heading';
@@ -123,7 +123,7 @@ export function Error({ error }) {
               </div>
             </div>
 
-            <div className={styles.videoContainer} data-visible={visible}>
+            {/* <div className={styles.videoContainer} data-visible={visible}>
               <Image
                 reveal
                 cover
@@ -154,7 +154,7 @@ export function Error({ error }) {
                   Animation from Ghost in the Shell (1995)
                 </a>
               )}
-            </div>
+            </div> */}
           </>
         )}
       </Transition>

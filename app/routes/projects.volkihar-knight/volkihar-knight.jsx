@@ -1,28 +1,28 @@
-import volkiharBackgroundLarge from '~/assets/volkihar-background-large.jpg';
-import volkiharBackgroundPlaceholder from '~/assets/volkihar-background-placeholder.jpg';
-import volkiharBackground from '~/assets/volkihar-background.jpg';
-import volkiharBannerLarge from '~/assets/volkihar-banner-large.jpg';
-import volkiharBannerPlaceholder from '~/assets/volkihar-banner-placeholder.jpg';
-import volkiharBanner from '~/assets/volkihar-banner.jpg';
-import volkiharBookLarge from '~/assets/volkihar-book-large.png';
-import volkiharBookPlaceholder from '~/assets/volkihar-book-placeholder.png';
-import volkiharBook from '~/assets/volkihar-book.png';
-import volkiharEnderalLarge from '~/assets/volkihar-enderal-large.jpg';
-import volkiharEnderalLogoLarge from '~/assets/volkihar-enderal-logo-large.png';
-import volkiharEnderalLogoPlaceholder from '~/assets/volkihar-enderal-logo-placeholder.png';
-import volkiharEnderalLogo from '~/assets/volkihar-enderal-logo.png';
-import volkiharEnderalPlaceholder from '~/assets/volkihar-enderal-placeholder.jpg';
-import volkiharEnderal from '~/assets/volkihar-enderal.jpg';
-import volkiharSlide1Large from '~/assets/volkihar-slide-1-large.jpg';
-import volkiharSlide1 from '~/assets/volkihar-slide-1.jpg';
-import volkiharSlide2Large from '~/assets/volkihar-slide-2-large.jpg';
-import volkiharSlide2 from '~/assets/volkihar-slide-2.jpg';
-import volkiharSlide3Large from '~/assets/volkihar-slide-3-large.jpg';
-import volkiharSlide3 from '~/assets/volkihar-slide-3.jpg';
-import volkiharSlidePlaceholder from '~/assets/volkihar-slide-placeholder.jpg';
-import { Button } from '~/components/button';
+// import volkiharBackgroundLarge from '~/assets/volkihar-background-large.jpg';
+// import volkiharBackgroundPlaceholder from '~/assets/volkihar-background-placeholder.jpg';
+// import volkiharBackground from '~/assets/volkihar-background.jpg';
+// import volkiharBannerLarge from '~/assets/volkihar-banner-large.jpg';
+// import volkiharBannerPlaceholder from '~/assets/volkihar-banner-placeholder.jpg';
+// import volkiharBanner from '~/assets/volkihar-banner.jpg';
+// import volkiharBookLarge from '~/assets/volkihar-book-large.png';
+// import volkiharBookPlaceholder from '~/assets/volkihar-book-placeholder.png';
+// import volkiharBook from '~/assets/volkihar-book.png';
+// import volkiharEnderalLarge from '~/assets/volkihar-enderal-large.jpg';
+// import volkiharEnderalLogoLarge from '~/assets/volkihar-enderal-logo-large.png';
+// import volkiharEnderalLogoPlaceholder from '~/assets/volkihar-enderal-logo-placeholder.png';
+// import volkiharEnderalLogo from '~/assets/volkihar-enderal-logo.png';
+// import volkiharEnderalPlaceholder from '~/assets/volkihar-enderal-placeholder.jpg';
+// import volkiharEnderal from '~/assets/volkihar-enderal.jpg';
+// import volkiharSlide1Large from '~/assets/volkihar-slide-1-large.jpg';
+// import volkiharSlide1 from '~/assets/volkihar-slide-1.jpg';
+// import volkiharSlide2Large from '~/assets/volkihar-slide-2-large.jpg';
+// import volkiharSlide2 from '~/assets/volkihar-slide-2.jpg';
+// import volkiharSlide3Large from '~/assets/volkihar-slide-3-large.jpg';
+// import volkiharSlide3 from '~/assets/volkihar-slide-3.jpg';
+// import volkiharSlidePlaceholder from '~/assets/volkihar-slide-placeholder.jpg';
+// import { Button } from '~/components/button';
 import { Footer } from '~/components/footer';
-import { Image } from '~/components/image';
+// import { Image } from '~/components/image';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -74,13 +74,13 @@ export function VolkiharKnight() {
         }}
       />
       <ProjectContainer>
-        <ProjectBackground
+        {/* <ProjectBackground
           srcSet={`${volkiharBackground} 1280w, ${volkiharBackgroundLarge} 1920w`}
           width={1280}
           height={720}
           placeholder={volkiharBackgroundPlaceholder}
           opacity={0.5}
-        />
+        /> */}
         <ProjectHeader
           title={title}
           description={description}
@@ -90,18 +90,18 @@ export function VolkiharKnight() {
         />
         <ProjectSection>
           <ProjectSectionContent>
-            <ProjectImage
+            {/* <ProjectImage
               srcSet={`${volkiharBanner} 800w, ${volkiharBannerLarge} 1100w`}
               width={800}
               height={436}
               placeholder={volkiharBannerPlaceholder}
               alt="A dark elf wearing the Volkihar Knight armor with the logo overlaid on the image."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
-            />
+            /> */}
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
-          <ProjectSectionContent>
+          {/* <ProjectSectionContent>
             <Image
               srcSet={`${volkiharBook} 490w, ${volkiharBookLarge} 960w`}
               width={480}
@@ -110,7 +110,7 @@ export function VolkiharKnight() {
               alt="A book containing a sketch depicting the logo and armor"
               sizes={`(max-width: ${media.mobile}px) 90vw, (max-width: ${media.tablet}px) 80vw, 70vw`}
             />
-          </ProjectSectionContent>
+          </ProjectSectionContent> */}
         </ProjectSection>
         <ProjectSection>
           <ProjectSectionColumns>
@@ -156,7 +156,7 @@ export function VolkiharKnight() {
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
-          <ProjectSectionContent>
+          {/* <ProjectSectionContent>
             <Suspense>
               <Carousel
                 placeholder={volkiharSlidePlaceholder}
@@ -181,9 +181,9 @@ export function VolkiharKnight() {
                 height={1080}
               />
             </Suspense>
-          </ProjectSectionContent>
+          </ProjectSectionContent> */}
         </ProjectSection>
-        <ProjectSection
+        {/* <ProjectSection
           backgroundElement={
             <Image
               srcSet={`${volkiharEnderal} 1280w, ${volkiharEnderalLarge} 1920w`}
@@ -223,7 +223,7 @@ export function VolkiharKnight() {
               </Button>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
       </ProjectContainer>
       <Footer />
     </Fragment>
