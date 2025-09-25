@@ -12,6 +12,8 @@ import { cssProps } from '~/utils/style';
 import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
+import { Text } from '~/components/text';
+import { Divider } from '~/components/divider';
 
 const DisplacementSphere = lazy(() =>
   import('./displacement-sphere').then(module => ({ default: module.DisplacementSphere }))
@@ -84,8 +86,10 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   >
                     {config.role}
                   </span>
-                  <span className={styles.line} data-status={status} />
+                    <span className={styles.line} data-status={status} />
+
                 </span>
+
                 <div className={styles.row}>
                   {disciplines.map(item => (
                     <Transition
@@ -110,6 +114,25 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   ))}
                 </div>
               </Heading>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '7px', marginLeft: '32px',marginTop:'40px' }}>
+                    <Divider
+                      notchWidth="40px"
+                      notchHeight="8px"
+                      collapsed={!visible}
+                      collapseDelay={1000}
+                    />
+                    <Text className={styles.description} data-visible={visible} as="p">
+                      <a
+                        href="/Amarjeet_Kumar.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: 'none', color: 'inherit', transition: 'color 0.3s ease' }}
+                      >
+                        View Resume
+                      </a>
+                    </Text>
+                  </div>
             </header>
             <RouterLink
               to="/#project-1"
