@@ -71,7 +71,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               </Suspense>
             )}
             <header className={styles.text}>
-              <h1 className={styles.name} data-visible={visible} id={titleId}>
+              <h1 className={styles.name} data-visible={visible} id={titleId} >
                 <DecoderText text={config.name} delay={500} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
@@ -122,16 +122,22 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                       collapsed={!visible}
                       collapseDelay={1000}
                     />
-                    <Text className={styles.description} data-visible={visible} as="p">
+                    {/* <Text className={styles.description} data-visible={visible} as="p"> */}
                       <a
                         href="/Amarjeet_Kumar.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: 'none', color: 'inherit', transition: 'color 0.3s ease' }}
                       >
+                    <Text 
+                    
+                    className={styles.description} data-visible={visible} id={titleId}
+                    >
+
                         View Resume
-                      </a>
                     </Text>
+
+                      </a>
                   </div>
             </header>
             <RouterLink

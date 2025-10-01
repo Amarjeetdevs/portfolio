@@ -68,7 +68,7 @@
 
 .sidebarImages {
   display: grid;
-  grid-template-columns: repeat(6, [col] 1fr);
+  grid-template-columns: repeat(6, [col] 2fr);
   align-items: center;
 
   @media (--mediaTablet) {

@@ -71,6 +71,46 @@
   }
 }
 
+
+.description {
+  /* text-transform: uppercase; */
+  font-size: calc((24 / 20) * .1rem);
+  letter-spacing: 0.2em;
+  color: var(--textLight);
+  margin-bottom: var(--space2XL);
+  margin-top: 10px;
+  font-weight: var(--fontWeightMedium);
+  line-height: 1;
+  opacity: 0;
+  transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
+
+  @media (--mediaLaptop) {
+    font-size: calc((22 / 16) * 1rem);
+    margin-bottom: var(--spaceXL);
+  }
+
+  @media (--mediaTablet) {
+    font-size: calc((18 / 16) * 1rem);
+  }
+
+  @media (--mediaMobile) {
+    margin-bottom: var(--spaceL);
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @media (max-width: 820px) and (max-height: 420px) {
+    margin-bottom: var(--spaceL);
+    margin-bottom: var(--spaceXL);
+  }
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+
 .title {
   letter-spacing: -0.03em;
 }

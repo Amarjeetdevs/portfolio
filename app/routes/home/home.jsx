@@ -108,11 +108,6 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        // title="Plastindia Foundation"
-        // description="Designing a platform to help educators build better online courseware"
-        // buttonText="View project"
-        // buttonLink="/projects/smart-sparrow"
-
          title="Plastindia Foundation"
          description="End-to-end development of Plastindia Foundation's official platform featuring member management, event coordination, certification tracking, and industry resource library"
   buttonText="View Website"
@@ -138,12 +133,12 @@ export const Home = () => {
         // title="Video game progress tracking"
         // description="Design and development for a video game tracking app built in React Native"
         // buttonText="View website"
-        // buttonLink="https://gamestack.hamishw.com"
 
         title="The Eyewear Project"
 description="Full-stack e-commerce development for premium eyewear brand featuring AR try-on, product customization, and integrated inventory management"
 buttonText="View live site"
-buttonLink="https://www.theeyewearproject.com"
+// buttonLink="https://www.theeyewearproject.com"
+        buttonLink="projects/smart-sparrow"
 
         model={{
           type: 'phone',
