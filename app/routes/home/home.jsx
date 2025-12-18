@@ -136,9 +136,10 @@ export const Home = () => {
 
         title="The Eyewear Project"
 description="Full-stack e-commerce development for premium eyewear brand featuring AR try-on, product customization, and integrated inventory management"
-buttonText="View live site"
-// buttonLink="https://www.theeyewearproject.com"
+buttonText="Check It Out"
         buttonLink="projects/smart-sparrow"
+
+// buttonLink="https://www.theeyewearproject.com"
 
         model={{
           type: 'phone',
